@@ -47,7 +47,7 @@ Minside CSS includes:
 Full documentation is available inside the /docs folder.
 
 ## 📁 Project Structure
-````bash````
+````bash
 minside-css/
 │
 ├── dist/
@@ -83,7 +83,7 @@ Since GitHub Pages is already used for another site, documentation can be:
 ✔ Hosted on custom domain ✔ Deployed via Vercel / Netlify ✔ Served locally ✔ Hosted inside subfolder of another domain
 
 To preview locally:
-````bash````
+````bash
 cd docs
 npx serve
 ````
@@ -95,7 +95,7 @@ You can customize:
 ● Color palette ● Spacing scale ● Border radius ● Typography scale ● Component variables
 
 Edit values inside:
-````bash````
+````bash
 dist/minside.css
 ````
 
