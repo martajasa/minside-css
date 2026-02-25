@@ -68,7 +68,7 @@ minside-css/
 │       └── deploy.yml
 │
 └── README.md
-````bash````
+````
 
 ## 🎨 Design Philosophy
 Minside CSS is built around:
@@ -86,7 +86,7 @@ To preview locally:
 ````bash````
 cd docs
 npx serve
-````bash````
+````
 or simply open docs/index.html in browser.
 
 ## 🛠 Customization
@@ -97,7 +97,7 @@ You can customize:
 Edit values inside:
 ````bash````
 dist/minside.css
-````bash````
+````
 
 ## 📈 Roadmap
 ● Dark mode ● Grid system ● Theme generator ● Component generator CLI ● NPM package release
