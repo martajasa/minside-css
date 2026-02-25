@@ -1,0 +1,19 @@
+.ms-accordion-item {
+    border-bottom: 1px solid var(--ms-border);
+}
+
+.ms-accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.ms-accordion-content {
+    display: none;
+    padding: 15px;
+    color: var(--ms-gray);
+}
+
+.ms-accordion-content.show {
+    display: block;
+}

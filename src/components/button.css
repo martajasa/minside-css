@@ -1,0 +1,25 @@
+.ms-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: var(--ms-radius-md);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: var(--ms-font);
+    transition: 0.2s ease;
+}
+
+.ms-btn-primary {
+    background: var(--ms-primary);
+    color: white;
+}
+
+.ms-btn-primary:hover {
+    background: var(--ms-primary-hover);
+}
+
+.ms-btn-outline {
+    background: transparent;
+    border: 1px solid var(--ms-border);
+    color: var(--ms-dark);
+}

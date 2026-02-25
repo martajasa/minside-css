@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ms-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - Minside CSS Docs</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/minside.css">
+    <link rel="stylesheet" href="docs.css">
+    <script defer src="../dist/minside.js"></script>
+    <script defer src="assets/docs.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+<div class="docs-layout">
+    <aside class="docs-sidebar">
+        <a class="docs-logo-link" href="../index.html"><img class="docs-logo" src="assets/logo.svg" alt="Minside CSS logo"></a>
+        <p class="docs-sidebar-tag">Clean, Calm, Precise framework. Utility first workflow dengan komponen siap produksi.</p>      <div class="docs-toolbar">
+        <input id="docs-search" class="ms-input" type="text" placeholder="Search docs (Ctrl/Cmd + K)">
+        <button class="ms-btn ms-btn-outline docs-theme-btn" data-ms-theme-toggle title="Toggle Theme" aria-label="Toggle Theme"><i class="ti ti-sun-moon"></i></button>
+      </div>
+      <div class="ms-divider"></div>
+      <nav class="docs-nav">
+            <a href="index.html">Introduction</a>
+            <a href="download.html">Download</a>
+            <a href="guides.html">Guides</a>
+            <a href="layout.html">Layout</a>
+            <a href="components.html">Components</a>
+            <a href="utilities.html">Utilities</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="theming.html">Theming</a>
+            <a href="snippets.html">Snippets</a>
+            <a href="playground.html">Playground</a>
+        </nav>
+      <div class="docs-side-section">
+        <p class="docs-side-title">Resources</p>
+        <div class="docs-side-links">
+          <a href="#">About</a>
+          <a href="#">FAQ</a>
+          <a href="#">Blog</a>
+          <a href="#">Brand</a>
+        </div>
+        <div class="docs-side-banner">Banner Space</div>
+      </div>
+    </aside>
+
+    <div class="docs-main">
+        <main class="docs-content">
+            <section class="docs-page-hero">
+                <h1><i class="ti ti-books"></i> Introduction</h1>
+                <p>Minside CSS adalah framework CSS modern dengan pendekatan minimalis: class jelas, visual tenang, dan komponen yang presisi untuk produk web nyata.</p>
+            </section>
+
+            <section class="docs-section">
+                <h2>Why Minside CSS</h2>
+                <p>Framework ini dibuat untuk tim yang ingin mempercepat UI delivery tanpa mengorbankan konsistensi visual dan keterbacaan codebase.</p>
+                <div class="docs-grid docs-grid-3">
+                    <article class="docs-card"><h3><i class="ti ti-sparkles"></i> Clean</h3><p>Class naming stabil, mudah dipelajari, mudah di-review.</p></article>
+                    <article class="docs-card"><h3><i class="ti ti-wave-sine"></i> Calm</h3><p>Design token fokus ke ritme spacing, kontras, dan whitespace.</p></article>
+                    <article class="docs-card"><h3><i class="ti ti-target-arrow"></i> Precise</h3><p>Komponen dan utilities dirancang agar predictable di produksi.</p></article>
+                </div>
+            </section>
+
+            <section class="docs-section">
+                <h2>Quick Start</h2>
+                <p>Mulai dengan CDN atau install package. Lihat detail lengkap di halaman <a href="guides.html" class="ms-text-primary">Guides</a>.</p>
+                <pre><code>&lt;link rel="stylesheet" href="../dist/minside.css" /&gt;
+&lt;script defer src="../dist/minside.js"&gt;&lt;/script&gt;
+
+&lt;button class="ms-btn ms-btn-primary"&gt;Hello Minside&lt;/button&gt;</code></pre>
+            </section>
+
+            <section class="docs-section">
+                <h2>What You Get</h2>
+                <ul class="docs-inline-list">
+                    <li>Layout primitives: container + responsive grid.</li>
+                    <li>Rich component set: button, card, badge, table, modal, alert, dropdown, accordion, navbar.</li>
+                    <li>Utility classes: spacing, text, color, flex, border, visibility helpers.</li>
+                    <li>Theme-ready tokens dengan dukungan light/dark mode.</li>
+                </ul>
+            </section>
+
+            <section class="docs-section">
+                <h2><i class="ti ti-icons"></i> Icons Recommendation</h2>
+                <p>Rekomendasi ikon free, modern, dan tidak terlalu pasaran untuk dipakai bersama Minside CSS:</p>
+                <table class="docs-table">
+                    <thead><tr><th>Library</th><th>Strength</th><th>License</th></tr></thead>
+                    <tbody>
+                        <tr><td><a href="https://tabler.io/icons" target="_blank" rel="noopener">Tabler Icons</a></td><td>Sangat cocok untuk docs + dashboard, ringan, konsisten, dan free.</td><td>MIT</td></tr><tr><td><a href="https://iconoir.com/" target="_blank" rel="noopener">Iconoir</a></td><td>Gaya unik, clean outline, cocok untuk UI minimal.</td><td>MIT</td></tr><tr><td><a href="https://phosphoricons.com/" target="_blank" rel="noopener">Phosphor</a></td><td>Banyak weight style, fleksibel untuk web/app.</td><td>MIT</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <footer class="docs-footer">
+                <span>© 2026 Minside CSS. Built for modern tech minimalism.</span>
+                <nav class="docs-footer-nav">
+                    <a href="index.html">Docs Home</a>
+                    <a href="guides.html">Guides</a>
+                    <a href="snippets.html">Snippets</a>
+                    <a href="https://github.com/minsidecss/minside-css" target="_blank" rel="noopener">GitHub</a>
+                </nav>
+            </footer>
+        </main>
+
+        <aside class="docs-toc">
+            <p class="docs-toc-title">On this page</p>
+            <nav id="on-this-page" class="docs-toc-nav"></nav></aside>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+

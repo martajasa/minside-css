@@ -1,0 +1,20 @@
+.ms-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.ms-modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: var(--ms-radius-lg);
+    width: 90%;
+    max-width: 500px;
+}
+
+.ms-modal.show {
+    display: flex;
+}

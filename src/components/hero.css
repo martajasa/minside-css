@@ -1,0 +1,17 @@
+.ms-hero {
+    padding: 120px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+}
+
+.ms-hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.ms-hero p {
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.9;
+}

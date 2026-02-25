@@ -1,0 +1,15 @@
+.ms-alert {
+    padding: 14px 18px;
+    border-radius: var(--ms-radius-md);
+    font-weight: 500;
+}
+
+.ms-alert-success {
+    background: #ecfdf5;
+    color: var(--ms-success);
+}
+
+.ms-alert-danger {
+    background: #fef2f2;
+    color: var(--ms-danger);
+}

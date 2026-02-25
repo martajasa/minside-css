@@ -1,0 +1,40 @@
+:root {
+    /* Colors */
+    --ms-primary: #4f46e5;
+    --ms-primary-hover: #4338ca;
+    --ms-dark: #111827;
+    --ms-gray: #6b7280;
+    --ms-light: #f9fafb;
+    --ms-border: #e5e7eb;
+    --ms-success: #16a34a;
+    --ms-danger: #dc2626;
+
+    /* Backgrounds */
+    --ms-bg: #ffffff;
+    --ms-text: #111827;
+    --ms-card-bg: #ffffff;
+
+    /* Radius */
+    --ms-radius-sm: 6px;
+    --ms-radius-md: 12px;
+    --ms-radius-lg: 20px;
+
+    /* Shadow */
+    --ms-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --ms-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    /* Spacing */
+    --ms-space-sm: 8px;
+    --ms-space-md: 16px;
+    --ms-space-lg: 32px;
+
+    /* Typography */
+    --ms-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+[data-ms-theme="dark"] {
+    --ms-bg: #0f172a;
+    --ms-text: #f1f5f9;
+    --ms-card-bg: #1e293b;
+    --ms-border: #334155;
+}

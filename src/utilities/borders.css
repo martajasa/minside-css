@@ -1,0 +1,7 @@
+.ms-border {
+    border: 1px solid var(--ms-border);
+}
+
+.ms-rounded {
+    border-radius: var(--ms-radius-md);
+}

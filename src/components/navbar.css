@@ -1,0 +1,15 @@
+.ms-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--ms-space-md) var(--ms-space-lg);
+    background: white;
+    border-bottom: 1px solid var(--ms-border);
+}
+
+.ms-nav-links a {
+    margin-left: var(--ms-space-md);
+    text-decoration: none;
+    color: var(--ms-dark);
+    font-weight: 500;
+}

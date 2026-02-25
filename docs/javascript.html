@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ms-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Minside CSS Docs</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/minside.css">
+  <link rel="stylesheet" href="docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <script defer src="../dist/minside.js"></script>
+  <script defer src="assets/docs.js"></script>
+</head>
+<body>
+  <div class="docs-layout">
+    <aside class="docs-sidebar">
+      <a class="docs-logo-link" href="../index.html"><img class="docs-logo" src="assets/logo.svg" alt="Minside CSS logo"></a>
+      <p class="docs-sidebar-tag">Clean, Calm, Precise framework. Utility first workflow dengan komponen siap produksi.</p>      <div class="docs-toolbar">
+        <input id="docs-search" class="ms-input" type="text" placeholder="Search docs (Ctrl/Cmd + K)">
+        <button class="ms-btn ms-btn-outline docs-theme-btn" data-ms-theme-toggle title="Toggle Theme" aria-label="Toggle Theme"><i class="ti ti-sun-moon"></i></button>
+      </div>
+      <div class="ms-divider"></div>
+      <nav class="docs-nav">
+        <a href="index.html">Introduction</a><a href="download.html">Download</a><a href="guides.html">Guides</a><a href="layout.html">Layout</a><a href="components.html">Components</a><a href="utilities.html">Utilities</a><a href="javascript.html">JavaScript</a><a href="theming.html">Theming</a><a href="snippets.html">Snippets</a><a href="playground.html">Playground</a>
+      </nav>
+      <div class="docs-side-section">
+        <p class="docs-side-title">Resources</p>
+        <div class="docs-side-links">
+          <a href="#">About</a>
+          <a href="#">FAQ</a>
+          <a href="#">Blog</a>
+          <a href="#">Brand</a>
+        </div>
+        <div class="docs-side-banner">Banner Space</div>
+      </div>
+    </aside>
+
+    <div class="docs-main">
+      <main class="docs-content">
+        <section class="docs-page-hero">
+          <h1><i class="ti ti-brand-javascript"></i> JavaScript Behaviors</h1>
+          <p>Minside JS mengaktifkan interaksi dasar berbasis class/atribut tanpa setup rumit, dengan transisi modal dan accordion yang halus.</p>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-layout-modal"></i> Smooth Modal Trigger</h2>
+          <p>Modal menggunakan fade + subtle scale animation saat open/close.</p>
+          <div class="docs-demo">
+            <button class="ms-btn ms-btn-primary" data-ms-modal="#sample-modal">Open Modal</button>
+            <div id="sample-modal" class="ms-modal">
+              <div class="ms-modal-content">
+                <h3>Modal Example</h3>
+                <p>Klik area overlay untuk menutup.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-chevron-down"></i> Smooth Accordion Toggle</h2>
+          <p>Accordion memakai animasi tinggi konten (<code>max-height</code>) untuk buka/tutup yang lebih halus.</p>
+          <div class="docs-demo">
+            <div class="ms-accordion-item"><div class="ms-accordion-header">Click to open section 1</div><div class="ms-accordion-content">Accordion content shown via smooth height animation.</div></div>
+            <div class="ms-accordion-item"><div class="ms-accordion-header">Click to open section 2</div><div class="ms-accordion-content">Another section with the same smooth transition.</div></div>
+          </div>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-menu-2"></i> Dropdown Toggle</h2>
+          <div class="docs-demo"><div class="ms-dropdown"><button class="ms-btn ms-btn-outline ms-dropdown-toggle">Toggle Dropdown</button><div class="ms-dropdown-menu"><a href="#">Action</a><a href="#">Another Action</a></div></div></div>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-sun-moon"></i> Theme Toggle</h2>
+          <p>Gunakan atribut <code>data-ms-theme-toggle</code> untuk switch dark/light mode.</p>
+          <div class="docs-demo"><button class="ms-btn ms-btn-secondary" data-ms-theme-toggle>Toggle Theme</button></div>
+        </section>
+
+        <footer class="docs-footer">
+          <span>© 2026 Minside CSS.</span>
+          <nav class="docs-footer-nav"><a href="components.html">Components</a><a href="guides.html">Guides</a><a href="snippets.html">Snippets</a></nav>
+        </footer>
+      </main>
+
+      <aside class="docs-toc"><p class="docs-toc-title">On this page</p><nav id="on-this-page" class="docs-toc-nav"></nav></aside>
+    </div>
+  </div>
+</body>
+</html>
+
+

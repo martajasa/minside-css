@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ms-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minside CSS is a clean and precise CSS framework for modern minimal interfaces.">
+    <meta name="keywords" content="CSS framework, minimal UI, modern design system, docs">
+    <meta name="author" content="Minside CSS">
+    <title>Minside CSS | Clean, Calm, Precise</title>
+
+    <meta property="og:title" content="Minside CSS">
+    <meta property="og:description" content="Clean, Calm, Precise CSS framework for modern interfaces.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://minsidecss.com">
+
+    <link rel="icon" href="docs/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <script defer src="docs/assets/docs.js"></script>
+    <link rel="stylesheet" href="dist/minside.css">
+
+    <style>
+        :root {
+            --home-bg-1: #f6f9fd;
+            --home-bg-2: #eef4fa;
+            --home-ink-soft: #4d5b6c;
+            --home-ring: rgba(66, 133, 244, 0.2);
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 12% -8%, #dceff6 0, transparent 38%),
+                radial-gradient(circle at 85% 0%, #e1ecff 0, transparent 34%),
+                linear-gradient(180deg, var(--home-bg-1) 0%, var(--home-bg-2) 100%);
+        }
+
+        .home-shell {
+            min-height: 100vh;
+        }
+
+        .home-topbar {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            border-bottom: 1px solid var(--ms-border);
+            background: color-mix(in srgb, var(--ms-bg) 88%, white 12%);
+            backdrop-filter: blur(10px);
+        }
+
+        .home-topbar-inner {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .home-brand {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--ms-text);
+        }
+
+        .home-brand img {
+            width: 176px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .home-nav {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .home-nav a {
+            color: var(--home-ink-soft);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .home-nav a:hover {
+            color: var(--ms-text);
+        }
+
+        .home-hero {
+            padding: 88px 0 56px;
+        }
+
+        .home-hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+            gap: 28px;
+            align-items: center;
+        }
+
+        .home-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 999px;
+            border: 1px solid #dce8ee;
+            color: #3f5368;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.72);
+        }
+
+        .home-hero h1 {
+            margin: 14px 0 14px;
+            font-size: clamp(1.9rem, 4.4vw, 3rem);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .home-hero p {
+            max-width: 620px;
+            margin: 0;
+            color: var(--home-ink-soft);
+            font-size: clamp(0.98rem, 1.6vw, 1.08rem);
+            line-height: 1.7;
+        }
+
+        .home-cta {
+            margin-top: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .home-proof {
+            margin-top: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            color: #526376;
+            font-size: 13px;
+        }
+
+        .home-proof i {
+            color: #1a73e8;
+            margin-right: 4px;
+        }
+
+        .home-panel {
+            margin-top: 30px;
+            padding: 22px;
+            border-radius: 20px;
+            border: 1px solid #dbe7ed;
+            background: rgba(255, 255, 255, 0.84);
+            box-shadow: 0 24px 48px -36px rgba(6, 30, 52, 0.4);
+        }
+
+        .home-panel pre {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.7;
+            white-space: pre-wrap;
+            color: #203247;
+        }
+
+        .home-illustration {
+            border: 1px solid #d7e5f1;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.72);
+            box-shadow: 0 20px 42px -34px rgba(8, 32, 58, 0.45);
+            padding: 14px;
+        }
+
+        .home-illustration svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .home-section {
+            padding: 42px 0;
+        }
+
+        .home-section h2 {
+            font-size: clamp(1.32rem, 2.7vw, 1.82rem);
+            margin: 0 0 10px;
+        }
+
+        .home-section p {
+            margin: 0;
+            color: var(--home-ink-soft);
+            max-width: 620px;
+        }
+
+        .home-feature {
+            border-radius: 18px;
+            padding: 24px;
+            border: 1px solid #dbe8ee;
+            background: rgba(255, 255, 255, 0.82);
+            box-shadow: 0 18px 40px -34px rgba(13, 36, 57, 0.45);
+        }
+
+        .home-feature h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 1.02rem;
+        }
+
+        .home-feature p {
+            margin: 0;
+            color: var(--home-ink-soft);
+            line-height: 1.65;
+        }
+
+        .home-preview {
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid #d6e5ec;
+            box-shadow: 0 24px 50px -36px rgba(7, 30, 52, 0.35);
+        }
+
+        .home-preview h3 {
+            margin-top: 0;
+            margin-bottom: 14px;
+        }
+
+        .home-preview .ms-alert {
+            margin-top: 10px;
+        }
+
+        .home-footer {
+            padding: 36px 0 48px;
+            border-top: 1px solid #d7e5eb;
+            margin-top: 46px;
+            color: #607286;
+            font-size: 14px;
+        }
+
+        .home-footer-wrap {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .ms-btn {
+            box-shadow: 0 10px 24px -18px var(--home-ring);
+        }
+
+        @media (max-width: 980px) {
+            .home-hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .home-illustration {
+                max-width: 460px;
+            }
+        }
+
+        @media (max-width: 860px) {
+            .home-brand img {
+                width: 148px;
+            }
+
+            .home-topbar-inner {
+                min-height: 64px;
+            }
+
+            .home-nav {
+                display: none;
+            }
+
+            .home-hero {
+                padding-top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-shell">
+        <header class="home-topbar">
+            <div class="ms-container home-topbar-inner">
+                <a class="home-brand" href="index.html">
+                    <img src="docs/assets/logo.svg" alt="Minside CSS logo">
+                </a>
+                <nav class="home-nav" aria-label="Main">
+                    <a href="#principles">Principles</a>
+                    <a href="#components">Components</a>
+                    <a href="docs/index.html">Documentation</a>
+                    <a href="https://github.com/minsidecss/minside-css">GitHub</a>
+                </nav>
+                <a href="docs/index.html" class="ms-btn ms-btn-primary">Get Started</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="home-hero">
+                <div class="ms-container home-hero-grid">
+                    <div>
+                        <span class="home-label"><i class="ti ti-sparkles"></i> Clean. Calm. Precise.</span>
+                        <h1>Design System Minimalis Untuk Produk Modern Yang Cepat Dibangun.</h1>
+                        <p>
+                            Minside CSS membantu tim membangun UI yang rapi, konsisten, dan mudah dipelihara dengan
+                            komponen inti, utilitas praktis, serta dukungan dark mode.
+                        </p>
+                        <div class="home-cta">
+                            <a href="docs/index.html" class="ms-btn ms-btn-primary"><i class="ti ti-rocket"></i>Mulai Dokumentasi</a>
+                            <a href="https://github.com/minsidecss/minside-css" class="ms-btn ms-btn-outline"><i class="ti ti-brand-github"></i>Lihat Source</a>
+                        </div>
+                        <div class="home-proof">
+                            <span><i class="ti ti-tag"></i>Latest stable: <strong>v1.1</strong></span>
+                            <span><i class="ti ti-license"></i>License: <strong>MIT</strong></span>
+                            <span><i class="ti ti-bolt"></i>No build required: <strong>langsung pakai CSS</strong></span>
+                        </div>
+
+                        <div class="home-panel" aria-label="Install command">
+                            <pre>&lt;link rel="stylesheet" href="https://cdn.example.com/minside.css" /&gt;
+&lt;script defer src="https://cdn.example.com/minside.js"&gt;&lt;/script&gt;
+
+&lt;button class="ms-btn ms-btn-primary"&gt;Build Fast&lt;/button&gt;</pre>
+                        </div>
+                    </div>
+
+                    <aside class="home-illustration" aria-label="UI sketch">
+                        <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="24" y="24" width="372" height="272" rx="20" fill="none" stroke="#90caf9" stroke-width="2" />
+                            <rect x="44" y="48" width="332" height="32" rx="8" fill="none" stroke="#64b5f6" stroke-width="2" />
+                            <circle cx="60" cy="64" r="4" fill="#1a73e8" />
+                            <circle cx="74" cy="64" r="4" fill="#34a853" />
+                            <circle cx="88" cy="64" r="4" fill="#fbbc05" />
+
+                            <rect x="44" y="100" width="154" height="84" rx="12" fill="none" stroke="#90caf9" stroke-width="2" />
+                            <rect x="214" y="100" width="162" height="84" rx="12" fill="none" stroke="#90caf9" stroke-width="2" />
+                            <rect x="44" y="198" width="332" height="18" rx="8" fill="none" stroke="#90caf9" stroke-width="2" />
+                            <rect x="44" y="226" width="246" height="12" rx="6" fill="none" stroke="#64b5f6" stroke-width="2" />
+                            <rect x="44" y="248" width="186" height="12" rx="6" fill="none" stroke="#64b5f6" stroke-width="2" />
+                            <rect x="300" y="226" width="76" height="34" rx="10" fill="none" stroke="#1a73e8" stroke-width="2" />
+                            <path d="M318 243h40" stroke="#1a73e8" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="principles" class="home-section">
+                <div class="ms-container">
+                    <h2>Framework principles</h2>
+                    <p>Setiap class dibangun untuk keterbacaan, skala, dan stabilitas UI jangka panjang.</p>
+                    <div class="ms-grid ms-grid-3" style="margin-top:22px;">
+                        <article class="home-feature"><h3><i class="ti ti-code"></i> Clean API</h3><p>Nama class singkat dan jelas, tanpa pola bertele-tele yang menyulitkan tim.</p></article>
+                        <article class="home-feature"><h3><i class="ti ti-adjustments"></i> Calm Visual Rhythm</h3><p>Skala spacing, radius, dan warna netral agar antarmuka terasa tenang dan profesional.</p></article>
+                        <article class="home-feature"><h3><i class="ti ti-checkup-list"></i> Precise Components</h3><p>Komponen inti dirancang konsisten untuk docs site, dashboard, dan landing page produksi.</p></article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="components" class="home-section">
+                <div class="ms-container">
+                    <h2>Component preview</h2>
+                    <p>Contoh komponen inti Minside CSS yang siap dipakai langsung.</p>
+                    <div class="ms-grid ms-grid-2" style="margin-top:22px;">
+                        <article class="ms-card home-preview">
+                            <h3>Alerts and Buttons</h3>
+                            <p class="ms-text-gray">Status messaging dengan visual yang jelas.</p>
+                            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+                                <button class="ms-btn ms-btn-primary">Primary Action</button>
+                                <button class="ms-btn ms-btn-outline">Secondary</button>
+                            </div>
+                            <div class="ms-alert ms-alert-success">Deployment finished successfully.</div>
+                        </article>
+
+                        <article class="ms-card home-preview">
+                            <h3>Forms and Inputs</h3>
+                            <p class="ms-text-gray">Input state yang fokus pada keterbacaan dan aksesibilitas.</p>
+                            <div style="margin-top:14px; display:grid; gap:10px;">
+                                <input class="ms-input" type="text" placeholder="Project name">
+                                <input class="ms-input" type="email" placeholder="owner@company.com">
+                                <button class="ms-btn ms-btn-primary">Create Project</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="home-footer">
+            <div class="ms-container home-footer-wrap">
+                <div>
+                    <small style="display:block; font-weight:700; color:#2a4059;">Minside CSS</small>
+                    <small>© 2026. Clean, Calm, Precise framework for modern UI.</small>
+                </div>
+                <div style="display:flex; gap:14px; flex-wrap:wrap;">
+                    <a href="docs/index.html" style="color:inherit; text-decoration:none;">Introduction</a>
+                    <a href="docs/guides.html" style="color:inherit; text-decoration:none;">Guides</a>
+                    <a href="docs/components.html" style="color:inherit; text-decoration:none;">Components</a>
+                    <a href="docs/utilities.html" style="color:inherit; text-decoration:none;">Utilities</a>
+                    <a href="docs/snippets.html" style="color:inherit; text-decoration:none;">Snippets</a>
+                    <a href="https://github.com/minsidecss/minside-css" style="color:inherit; text-decoration:none;">GitHub</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

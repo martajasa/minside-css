@@ -1,0 +1,107 @@
+Konsep Dasar Minside CSS
+
+🎨 Branding Minside CSS
+Konsep Visual
+
+Minside CSS adalah:
+Clean
+Calm
+Precise
+Modern tech minimalism
+
+Warna utama tetap indigo modern.
+Secondary slate netral.
+Aksen success dan danger lembut.
+
+Konsep Logo:
+Huruf “M” geometris
+Sudut rounded
+Gradient indigo ke violet
+Style flat, tanpa outline berat
+Kesan modular blok UI
+
+Tagline resmi:
+Build Clean Interfaces From The Inside.
+
+Filosofi:
+Clean
+Minimal
+Modern
+Soft radius
+Elegant shadow
+Konsisten spacing
+
+🧠 Roadmap Minside CSS v1.0
+
+Target:
+Framework component based yang ringan, modern, scalable.
+
+Fitur v1.0.0:
+Core system (reset + variables)
+Layout container + grid
+Button
+Card
+Navbar
+Badge
+Alert
+Form elements
+Utilities spacing sederhana
+CDN build
+Landing + Docs page dasar
+
+🚀 Identitas Produk
+
+Versi resmi:
+Minside CSS v1.1
+Component Based + Interactive UI
+
+Distribusi:
+CDN
+NPM
+GitHub repo
+Documentation site
+
+🏗️ STRUKTUR FINAL PRODUCTION
+📁 Struktur Folder yang BENAR
+minside-css/
+│
+├── dist/
+│   ├── minside.css
+│   ├── minside.min.css
+│   ├── minside.js
+│   └── minside.min.js
+│
+├── src/
+│   ├── core/
+│   ├── layout/
+│   ├── components/
+│   ├── utilities/
+│   └── js/
+│
+├── docs/
+│   ├── index.html
+│   ├── components.html
+│   ├── utilities.html
+│   └── assets/
+│
+├── package.json
+├── README.md
+├── LICENSE
+└── .gitignore
+
+Keterangan Folder:
+src untuk development
+dist untuk file siap pakai CDN
+docs untuk website dokumentasi
+Root bersih dan profesional
+
+🧠 VERSIONING STRATEGY
+Gunakan Semantic Versioning: 1.0.0
+Format: MAJOR.MINOR.PATCH
+
+Contoh:
+1.0.0 → rilis stabil pertama
+1.1.0 → tambah fitur
+1.1.1 → bug fix
+2.0.0 → breaking change
+

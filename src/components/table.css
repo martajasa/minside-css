@@ -1,0 +1,19 @@
+.ms-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: var(--ms-radius-md);
+    overflow: hidden;
+}
+
+.ms-table th,
+.ms-table td {
+    padding: 14px;
+    border-bottom: 1px solid var(--ms-border);
+    text-align: left;
+}
+
+.ms-table th {
+    background: var(--ms-light);
+    font-weight: 600;
+}

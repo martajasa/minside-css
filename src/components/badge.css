@@ -1,0 +1,12 @@
+.ms-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: var(--ms-radius-sm);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ms-badge-primary {
+    background: var(--ms-primary);
+    color: white;
+}

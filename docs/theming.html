@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ms-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theming - Minside CSS Docs</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/minside.css">
+  <link rel="stylesheet" href="docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <script defer src="../dist/minside.js"></script>
+  <script defer src="assets/docs.js"></script>
+</head>
+<body>
+  <div class="docs-layout">
+    <aside class="docs-sidebar">
+      <a class="docs-logo-link" href="../index.html"><img class="docs-logo" src="assets/logo.svg" alt="Minside CSS logo"></a>
+      <p class="docs-sidebar-tag">Clean, Calm, Precise framework. Utility first workflow dengan komponen siap produksi.</p>      <div class="docs-toolbar">
+        <input id="docs-search" class="ms-input" type="text" placeholder="Search docs (Ctrl/Cmd + K)">
+        <button class="ms-btn ms-btn-outline docs-theme-btn" data-ms-theme-toggle title="Toggle Theme" aria-label="Toggle Theme"><i class="ti ti-sun-moon"></i></button>
+      </div>
+      <div class="ms-divider"></div>
+      <nav class="docs-nav">
+        <a href="index.html">Introduction</a><a href="download.html">Download</a><a href="guides.html">Guides</a><a href="layout.html">Layout</a><a href="components.html">Components</a><a href="utilities.html">Utilities</a><a href="javascript.html">JavaScript</a><a href="theming.html">Theming</a><a href="snippets.html">Snippets</a><a href="playground.html">Playground</a>
+      </nav>
+      <div class="docs-side-section">
+        <p class="docs-side-title">Resources</p>
+        <div class="docs-side-links">
+          <a href="#">About</a>
+          <a href="#">FAQ</a>
+          <a href="#">Blog</a>
+          <a href="#">Brand</a>
+        </div>
+        <div class="docs-side-banner">Banner Space</div>
+      </div>
+    </aside>
+
+    <div class="docs-main">
+      <main class="docs-content">
+        <section class="docs-page-hero">
+          <h1><i class="ti ti-palette"></i> Theming</h1>
+          <p>Atur identitas visual produk Anda lewat design tokens Minside CSS.</p>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-moon-stars"></i> Theme Mode</h2>
+          <p>Switch mode menggunakan atribut pada element html.</p>
+          <pre><code>&lt;html data-ms-theme="light"&gt;
+...
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-variable"></i> Primary Tokens</h2>
+          <table class="docs-table">
+            <thead><tr><th>Token</th><th>Purpose</th></tr></thead>
+            <tbody>
+              <tr><td><code>--ms-primary</code></td><td>Main brand color</td></tr>
+              <tr><td><code>--ms-secondary</code></td><td>Alternative neutral action</td></tr>
+              <tr><td><code>--ms-info / --ms-success / --ms-warning / --ms-danger</code></td><td>Semantic colors</td></tr>
+              <tr><td><code>--ms-bg / --ms-bg-elevated</code></td><td>Surface colors</td></tr>
+              <tr><td><code>--ms-text / --ms-text-muted</code></td><td>Typography colors</td></tr>
+              <tr><td><code>--ms-font-heading / --ms-font</code></td><td>Heading/body font stacks</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-letter-case"></i> Typography Defaults</h2>
+          <p>Framework mengarah ke <strong>Inter</strong> untuk heading dan <strong>Segoe UI</strong> untuk body text.</p>
+          <div class="docs-note">Pastikan font dimuat lewat Google Fonts atau self-host agar fallback tidak berubah drastis.</div>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-brush"></i> Custom Brand Example</h2>
+          <pre><code>:root {
+  --ms-primary: #0d9488;
+  --ms-primary-hover: #0f766e;
+  --ms-secondary: #334155;
+  --ms-bg: #f2f8f9;
+}
+
+[data-ms-theme="dark"] {
+  --ms-bg: #0b1a24;
+  --ms-bg-elevated: #122535;
+}</code></pre>
+        </section>
+
+        <footer class="docs-footer">
+          <span>© 2026 Minside CSS.</span>
+          <nav class="docs-footer-nav"><a href="guides.html">Guides</a><a href="utilities.html">Utilities</a><a href="snippets.html">Snippets</a></nav>
+        </footer>
+      </main>
+
+      <aside class="docs-toc"><p class="docs-toc-title">On this page</p><nav id="on-this-page" class="docs-toc-nav"></nav></aside>
+    </div>
+  </div>
+</body>
+</html>
+
+

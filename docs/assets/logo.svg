@@ -1,0 +1,12 @@
+<svg width="212" height="56" viewBox="0 0 212 56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minside CSS logo">
+  <defs>
+    <linearGradient id="msLogoBlue" x1="6" y1="6" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#1A73E8"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="6" width="44" height="44" rx="12" fill="url(#msLogoBlue)"/>
+  <path d="M14 35V18.5l6 6 6-6 6 6 6-6V35" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="14" y="35.5" width="24" height="3" rx="1.5" fill="#FFFFFF" opacity="0.9"/>
+  <text x="58" y="33" font-family="Inter, 'Segoe UI', sans-serif" font-size="24" font-weight="800" fill="#111111">Minside CSS</text>
+</svg>

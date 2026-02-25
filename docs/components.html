@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ms-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components - Minside CSS Docs</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/minside.css">
+    <link rel="stylesheet" href="docs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <script defer src="../dist/minside.js"></script>
+    <script defer src="assets/docs.js"></script>
+    <style>
+        .demo-nav {
+            border-radius: 12px;
+            overflow: visible;
+            position: relative;
+            z-index: 5;
+        }
+
+        .demo-navbar-search {
+            min-width: 210px;
+            max-width: 240px;
+        }
+
+        .demo-nav .ms-dropdown {
+            position: relative;
+        }
+
+        .demo-nav .ms-dropdown-menu {
+            z-index: 30;
+        }
+
+        .demo-accordion-soft .ms-accordion-item {
+            border: 0;
+            background: color-mix(in srgb, var(--ms-primary-soft) 62%, var(--ms-bg-elevated));
+        }
+
+        .demo-accordion-accent .ms-accordion-item {
+            border-left: 4px solid var(--ms-info);
+        }
+
+        .card-media {
+            width: 100%;
+            height: 148px;
+            object-fit: cover;
+            border-radius: var(--ms-radius-md);
+            margin-bottom: 10px;
+        }
+
+        .card-header {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--ms-border);
+            font-weight: 700;
+        }
+
+        .card-footer {
+            padding: 10px 12px;
+            border-top: 1px solid var(--ms-border);
+            color: var(--ms-text-muted);
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="docs-layout">
+        <aside class="docs-sidebar">
+            <a class="docs-logo-link" href="../index.html"><img class="docs-logo" src="assets/logo.svg" alt="Minside CSS logo"></a>
+            <p class="docs-sidebar-tag">Clean, Calm, Precise framework. Utility first workflow dengan komponen siap produksi.</p>      <div class="docs-toolbar">
+        <input id="docs-search" class="ms-input" type="text" placeholder="Search docs (Ctrl/Cmd + K)">
+        <button class="ms-btn ms-btn-outline docs-theme-btn" data-ms-theme-toggle title="Toggle Theme" aria-label="Toggle Theme"><i class="ti ti-sun-moon"></i></button>
+      </div>
+      <div class="ms-divider"></div>
+      <nav class="docs-nav">
+                <a href="index.html">Introduction</a>
+                <a href="download.html">Download</a>
+                <a href="guides.html">Guides</a>
+                <a href="layout.html">Layout</a>
+                <a href="components.html">Components</a>
+                <a href="utilities.html">Utilities</a>
+                <a href="javascript.html">JavaScript</a>
+                <a href="theming.html">Theming</a>
+                <a href="snippets.html">Snippets</a>
+                <a href="playground.html">Playground</a>
+            </nav>
+      <div class="docs-side-section">
+        <p class="docs-side-title">Resources</p>
+        <div class="docs-side-links">
+          <a href="#">About</a>
+          <a href="#">FAQ</a>
+          <a href="#">Blog</a>
+          <a href="#">Brand</a>
+        </div>
+        <div class="docs-side-banner">Banner Space</div>
+      </div>
+    </aside>
+
+        <div class="docs-main">
+            <main class="docs-content">
+                <section class="docs-page-hero">
+                    <h1><i class="ti ti-components"></i> Components</h1>
+                    <p>Variasi komponen lengkap: cards, list, forms, tabs, accordion, dan navbar responsive.</p>
+                </section>
+
+                <section class="docs-section">
+                    <h2>Navbar Variants</h2>
+                    <h3>1) Navbar with logo left</h3>
+                    <div class="docs-demo demo-nav">
+                        <nav class="ms-navbar ms-navbar-wrap">
+                            <strong><i class="ti ti-layout-navbar"></i> Minside</strong>
+                            <div class="ms-navbar-menu show">
+                                <a href="#">Docs</a>
+                                <a href="#">Components</a>
+                                <a href="#">GitHub</a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <h3>2) Navbar with dropdown menu</h3>
+                    <div class="docs-demo demo-nav">
+                        <nav class="ms-navbar ms-navbar-wrap">
+                            <strong>Docs Menu</strong>
+                            <div class="ms-navbar-menu show">
+                                <a href="#">Home</a>
+                                <div class="ms-dropdown">
+                                    <button class="ms-btn ms-btn-outline ms-dropdown-toggle">Products <i class="ti ti-chevron-down"></i></button>
+                                    <div class="ms-dropdown-menu">
+                                        <a href="#">UI Kit</a>
+                                        <a href="#">Templates</a>
+                                    </div>
+                                </div>
+                                <a href="#">Pricing</a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <h3>3) Navbar with search + responsive hamburger</h3>
+                    <div class="docs-demo demo-nav">
+                        <nav class="ms-navbar ms-navbar-wrap">
+                            <strong>Minside CSS</strong>
+                            <button class="ms-btn ms-btn-outline ms-navbar-toggle js-nav-toggle" type="button"><i class="ti ti-menu-2"></i></button>
+                            <div class="ms-navbar-menu js-nav-menu">
+                                <a href="#">Docs</a>
+                                <a href="#">Guides</a>
+                                <input class="ms-input demo-navbar-search" type="search" placeholder="Search...">
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="docs-note">Warna navbar bisa diubah dengan custom token: `--ms-bg-elevated`, `--ms-dark`, `--ms-border`, atau pakai class `.ms-navbar-inverse`.</div>
+                </section>
+
+                <section class="docs-section">
+                    <h2>Cards Variants</h2>
+                    <div class="docs-grid">
+                        <article class="ms-card">
+                            <img class="card-media" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80" alt="Card image">
+                            <h3>Image Card</h3>
+                            <p>Card dengan gambar dan konten teks.</p>
+                        </article>
+
+                        <article class="ms-card ms-p-0">
+                            <div class="card-header">Card Header</div>
+                            <div class="ms-p-2">Body content untuk artikel atau informasi ringkas.</div>
+                            <div class="card-footer">Card Footer</div>
+                        </article>
+
+                        <article class="ms-card">
+                            <h3>Card with List</h3>
+                            <ul class="ms-list">
+                                <li>Reusable blocks</li>
+                                <li>Consistent spacing</li>
+                                <li>Color tokens</li>
+                            </ul>
+                        </article>
+
+                        <article class="ms-card">
+                            <h3>Card with Table</h3>
+                            <table class="ms-table ms-table-compact">
+                                <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+                                <tbody><tr><td>Uptime</td><td>99.9%</td></tr><tr><td>Latency</td><td>120ms</td></tr></tbody>
+                            </table>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="docs-section">
+                    <h2>List Variants</h2>
+                    <div class="docs-grid">
+                        <div class="docs-card">
+                            <h3>Default List</h3>
+                            <ul class="ms-list"><li>Item one</li><li>Item two</li><li>Item three</li></ul>
+                        </div>
+                        <div class="docs-card">
+                            <h3>Icon List</h3>
+                            <ul class="ms-list-icon">
+                                <li><i class="ti ti-circle-check ms-text-success"></i> Build design tokens</li>
+                                <li><i class="ti ti-sparkles ms-text-info"></i> Compose reusable UI</li>
+                                <li><i class="ti ti-rocket ms-text-primary"></i> Ship faster</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="docs-section">
+                    <h2>Form Ecosystem</h2>
+                    <div class="docs-demo">
+                        <div class="ms-form-row">
+                            <div class="ms-form-group">
+                                <label class="ms-label" for="name">Name</label>
+                                <input id="name" class="ms-input" type="text" placeholder="Your name">
+                            </div>
+                            <div class="ms-form-group">
+                                <label class="ms-label" for="email">Email</label>
+                                <input id="email" class="ms-input" type="email" placeholder="hello@company.com">
+                            </div>
+                        </div>
+                        <div class="ms-form-row">
+                            <div class="ms-form-group">
+                                <label class="ms-label" for="role">Select</label>
+                                <select id="role" class="ms-input"><option>Frontend Engineer</option><option>Backend Engineer</option><option>Designer</option></select>
+                            </div>
+                            <div class="ms-form-group">
+                                <label class="ms-label">Checks & Radios</label>
+                                <label class="ms-check"><input class="ms-check-input" type="checkbox" checked><span class="ms-check-label">Receive updates</span></label>
+                                <label class="ms-check"><input class="ms-check-input" type="radio" name="plan" checked><span class="ms-check-label">Starter</span></label>
+                                <label class="ms-check"><input class="ms-check-input" type="radio" name="plan"><span class="ms-check-label">Pro</span></label>
+                            </div>
+                        </div>
+                        <div class="ms-form-group">
+                            <label class="ms-label" for="msg">Textarea (resizing)</label>
+                            <textarea id="msg" class="ms-input ms-input-resize-y" placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="docs-section">
+                    <h2>Tabs Variants</h2>
+                    <h3>Default Tabs</h3>
+                    <div class="ms-tabs js-tabs">
+                        <div class="ms-tab-list">
+                            <button class="ms-tab-button active">Overview</button>
+                            <button class="ms-tab-button">Code</button>
+                            <button class="ms-tab-button">Usage</button>
+                        </div>
+                        <div class="ms-tab-panel active">Overview content panel.</div>
+                        <div class="ms-tab-panel">Code sample panel.</div>
+                        <div class="ms-tab-panel">Usage guideline panel.</div>
+                    </div>
+
+                    <h3>Underline Tabs</h3>
+                    <div class="ms-tabs js-tabs" style="margin-top:12px;">
+                        <div class="ms-tab-list underline">
+                            <button class="ms-tab-button active">Design</button>
+                            <button class="ms-tab-button">Develop</button>
+                            <button class="ms-tab-button">Deploy</button>
+                        </div>
+                        <div class="ms-tab-panel active">Design tab content.</div>
+                        <div class="ms-tab-panel">Develop tab content.</div>
+                        <div class="ms-tab-panel">Deploy tab content.</div>
+                    </div>
+
+                    <h3>Pill Tabs</h3>
+                    <div class="ms-tabs js-tabs" style="margin-top:12px;">
+                        <div class="ms-tab-list">
+                            <button class="ms-tab-button active"><i class="ti ti-home"></i> Home</button>
+                            <button class="ms-tab-button"><i class="ti ti-chart-bar"></i> Analytics</button>
+                            <button class="ms-tab-button"><i class="ti ti-settings"></i> Settings</button>
+                        </div>
+                        <div class="ms-tab-panel active">Home content.</div>
+                        <div class="ms-tab-panel">Analytics content.</div>
+                        <div class="ms-tab-panel">Settings content.</div>
+                    </div>
+                </section>
+
+                <section class="docs-section">
+                    <h2>Accordion Variants</h2>
+                    <h3>Default</h3>
+                    <div class="docs-demo">
+                        <div class="ms-accordion-item">
+                            <div class="ms-accordion-header">Default Item 1</div>
+                            <div class="ms-accordion-content">Content of first item.</div>
+                        </div>
+                        <div class="ms-accordion-item">
+                            <div class="ms-accordion-header">Default Item 2</div>
+                            <div class="ms-accordion-content">Content of second item.</div>
+                        </div>
+                    </div>
+
+                    <h3>Soft Accent Variant</h3>
+                    <div class="docs-demo demo-accordion-soft">
+                        <div class="ms-accordion-item">
+                            <div class="ms-accordion-header">Soft Item A</div>
+                            <div class="ms-accordion-content">Softer background style.</div>
+                        </div>
+                    </div>
+
+                    <h3>Left Accent Variant</h3>
+                    <div class="docs-demo demo-accordion-accent">
+                        <div class="ms-accordion-item">
+                            <div class="ms-accordion-header">Accent Item</div>
+                            <div class="ms-accordion-content">Left border accent style.</div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="docs-footer">
+                    <span>© 2026 Minside CSS.</span>
+                    <nav class="docs-footer-nav"><a href="utilities.html">Utilities</a><a href="javascript.html">JavaScript Behaviors</a><a href="snippets.html">Snippets</a></nav>
+                </footer>
+            </main>
+
+            <aside class="docs-toc">
+                <p class="docs-toc-title">On this page</p>
+                <nav id="on-this-page" class="docs-toc-nav"></nav></aside>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.js-tabs').forEach((tabs) => {
+            const buttons = tabs.querySelectorAll('.ms-tab-button');
+            const panels = tabs.querySelectorAll('.ms-tab-panel');
+            buttons.forEach((btn, idx) => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach((b) => b.classList.remove('active'));
+                    panels.forEach((p) => p.classList.remove('active'));
+                    btn.classList.add('active');
+                    panels[idx]?.classList.add('active');
+                });
+            });
+        });
+
+        document.querySelectorAll('.js-nav-toggle').forEach((toggle) => {
+            toggle.addEventListener('click', () => {
+                const menu = toggle.closest('.ms-navbar')?.querySelector('.js-nav-menu');
+                menu?.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+

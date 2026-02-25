@@ -1,0 +1,7 @@
+.ms-card {
+    background: var(--ms-card-bg);
+    padding: var(--ms-space-lg);
+    border-radius: var(--ms-radius-lg);
+    box-shadow: var(--ms-shadow-sm);
+    border: 1px solid var(--ms-border);
+}

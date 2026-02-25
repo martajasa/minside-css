@@ -1,0 +1,21 @@
+﻿{
+  "name": "minside-css",
+  "version": "1.0.0",
+  "description": "Modern component-based CSS framework",
+  "main": "dist/minside.min.css",
+  "keywords": [
+    "css",
+    "framework",
+    "ui",
+    "component"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "conventional-changelog-cli": "^5.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build-dist.mjs",
+    "build:dist": "node scripts/build-dist.mjs",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  }
+}

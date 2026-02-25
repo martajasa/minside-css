@@ -1,0 +1,15 @@
+.ms-flex {
+    display: flex;
+}
+
+.ms-justify-center {
+    justify-content: center;
+}
+
+.ms-align-center {
+    align-items: center;
+}
+
+.ms-flex-column {
+    flex-direction: column;
+}

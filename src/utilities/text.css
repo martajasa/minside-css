@@ -1,0 +1,11 @@
+.ms-text-primary {
+    color: var(--ms-primary);
+}
+
+.ms-text-gray {
+    color: var(--ms-gray);
+}
+
+.ms-text-white {
+    color: white;
+}

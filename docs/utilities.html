@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ms-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilities - Minside CSS Docs</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/minside.css">
+  <link rel="stylesheet" href="docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <script defer src="../dist/minside.js"></script>
+  <script defer src="assets/docs.js"></script>
+</head>
+<body>
+  <div class="docs-layout">
+    <aside class="docs-sidebar">
+      <a class="docs-logo-link" href="../index.html"><img class="docs-logo" src="assets/logo.svg" alt="Minside CSS logo"></a>
+      <p class="docs-sidebar-tag">Clean, Calm, Precise framework. Utility first workflow dengan komponen siap produksi.</p>      <div class="docs-toolbar">
+        <input id="docs-search" class="ms-input" type="text" placeholder="Search docs (Ctrl/Cmd + K)">
+        <button class="ms-btn ms-btn-outline docs-theme-btn" data-ms-theme-toggle title="Toggle Theme" aria-label="Toggle Theme"><i class="ti ti-sun-moon"></i></button>
+      </div>
+      <div class="ms-divider"></div>
+      <nav class="docs-nav">
+        <a href="index.html">Introduction</a><a href="download.html">Download</a><a href="guides.html">Guides</a><a href="layout.html">Layout</a><a href="components.html">Components</a><a href="utilities.html">Utilities</a><a href="javascript.html">JavaScript</a><a href="theming.html">Theming</a><a href="snippets.html">Snippets</a><a href="playground.html">Playground</a>
+      </nav>
+      <div class="docs-side-section">
+        <p class="docs-side-title">Resources</p>
+        <div class="docs-side-links">
+          <a href="#">About</a>
+          <a href="#">FAQ</a>
+          <a href="#">Blog</a>
+          <a href="#">Brand</a>
+        </div>
+        <div class="docs-side-banner">Banner Space</div>
+      </div>
+    </aside>
+
+    <div class="docs-main">
+      <main class="docs-content">
+        <section class="docs-page-hero">
+          <h1><i class="ti ti-adjustments"></i> Utilities</h1>
+          <p>Utility classes untuk spacing, colors, typography, borders, flex, dan responsive visibility.</p>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-typography"></i> Text and Font Utilities</h2>
+          <div class="docs-demo">
+            <p class="ms-text-primary">Primary text</p>
+            <p class="ms-text-secondary">Secondary text</p>
+            <p class="ms-text-success">Success text</p>
+            <p class="ms-text-info">Info text</p>
+            <p class="ms-text-warning">Warning text</p>
+            <p class="ms-text-danger">Danger text</p>
+            <p class="ms-text-gray">Muted text</p>
+            <p class="ms-text-sm">Small text</p>
+            <p class="ms-text-lg">Large text</p>
+            <p class="ms-fw-medium">Medium weight</p>
+            <p class="ms-fw-semibold">Semibold weight</p>
+            <p class="ms-fw-bold">Bold weight</p>
+          </div>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-palette"></i> Background Utilities</h2>
+          <div class="docs-grid docs-grid-3">
+            <div class="ms-bg-primary ms-p-2 ms-rounded">Primary</div>
+            <div class="ms-bg-secondary ms-p-2 ms-rounded">Secondary</div>
+            <div class="ms-bg-success ms-p-2 ms-rounded">Success</div>
+            <div class="ms-bg-info ms-p-2 ms-rounded">Info</div>
+            <div class="ms-bg-warning ms-p-2 ms-rounded">Warning</div>
+            <div class="ms-bg-danger ms-p-2 ms-rounded">Danger</div>
+            <div class="ms-bg-dark ms-p-2 ms-rounded">Dark</div>
+            <div class="ms-bg-light ms-p-2 ms-rounded">Light</div>
+          </div>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-spacing-horizontal"></i> Spacing Utilities</h2>
+          <div class="docs-demo"><div class="ms-card ms-m-1">.ms-m-1</div><div class="ms-card ms-m-2">.ms-m-2</div><div class="ms-card ms-m-3">.ms-m-3</div><div class="ms-card ms-p-1">.ms-p-1</div><div class="ms-card ms-p-2">.ms-p-2</div><div class="ms-card ms-p-3">.ms-p-3</div></div>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-square-rounded"></i> Border, Radius, Shadow</h2>
+          <div class="docs-grid">
+            <div class="ms-card ms-border ms-rounded-sm">Rounded small</div>
+            <div class="ms-card ms-border ms-rounded">Rounded medium</div>
+            <div class="ms-card ms-border ms-rounded-lg">Rounded large</div>
+            <div class="ms-card ms-shadow-sm">Shadow sm</div>
+            <div class="ms-card ms-shadow-md">Shadow md</div>
+            <div class="ms-card ms-border-0">No border</div>
+          </div>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-layout-align-middle"></i> Flex and Alignment</h2>
+          <div class="docs-demo"><div class="ms-flex ms-justify-between ms-align-center ms-border ms-p-2"><strong>Left</strong><span>Right</span></div><div class="ms-flex ms-flex-column ms-align-center ms-border ms-p-2 ms-m-1"><span>Column 1</span><span>Column 2</span></div><div class="ms-flex ms-flex-wrap ms-border ms-p-2"><span class="ms-badge ms-badge-primary">Wrap</span><span class="ms-badge ms-badge-info">Wrap</span><span class="ms-badge ms-badge-success">Wrap</span></div></div>
+        </section>
+
+        <section class="docs-section">
+          <h2><i class="ti ti-device-mobile"></i> Responsive Visibility</h2>
+          <div class="docs-demo"><div class="ms-hidden-mobile ms-bg-info ms-p-2 ms-rounded">Visible on desktop, hidden on mobile.</div><div class="ms-hidden-desktop ms-bg-warning ms-p-2 ms-rounded">Visible on mobile only.</div></div>
+        </section>
+
+        <footer class="docs-footer">
+          <span>© 2026 Minside CSS.</span>
+          <nav class="docs-footer-nav"><a href="components.html">Components</a><a href="layout.html">Layout</a><a href="snippets.html">Snippets</a></nav>
+        </footer>
+      </main>
+
+      <aside class="docs-toc"><p class="docs-toc-title">On this page</p><nav id="on-this-page" class="docs-toc-nav"></nav></aside>
+    </div>
+  </div>
+</body>
+</html>
+
+

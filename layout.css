@@ -1,0 +1,25 @@
+.ms-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 var(--ms-space-lg);
+}
+
+.ms-grid {
+  display: grid;
+  gap: var(--ms-space-lg);
+}
+
+.ms-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ms-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .ms-grid-2,
+  .ms-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

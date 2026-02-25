@@ -1,0 +1,13 @@
+.ms-bg-primary {
+    background: var(--ms-primary);
+    color: white;
+}
+
+.ms-bg-light {
+    background: var(--ms-light);
+}
+
+.ms-bg-dark {
+    background: var(--ms-dark);
+    color: white;
+}

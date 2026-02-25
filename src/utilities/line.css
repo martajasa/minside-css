@@ -1,0 +1,5 @@
+.ms-divider {
+    height: 1px;
+    background: var(--ms-border);
+    margin: 20px 0;
+}

@@ -1,0 +1,27 @@
+.ms-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.ms-dropdown-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: white;
+    border: 1px solid var(--ms-border);
+    border-radius: var(--ms-radius-md);
+    box-shadow: var(--ms-shadow-sm);
+    display: none;
+    min-width: 160px;
+}
+
+.ms-dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--ms-dark);
+}
+
+.ms-dropdown-menu.show {
+    display: block;
+}
